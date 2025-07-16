@@ -26,7 +26,7 @@ public class forgotpasswordservlet extends HttpServlet {
     private static final String DB_USER = "root";
     private static final String DB_PASS = "VARUN.a@7981";
     private static final String EMAIL_FROM = "varun798195@gmail.com";
-    private static final String EMAIL_PASS = "gvlo qwuu tnha yohq";
+    private static final String EMAIL_PASS = "my password";
     private static final String SMTP_HOST = "smtp.gmail.com";
     private static final int SMTP_PORT = 587;
     private static final long OTP_VALIDITY_DURATION = 5 * 60 * 1000;
