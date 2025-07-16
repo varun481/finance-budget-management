@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #E6E9FF 0%, #A8B1FF 50%, #F7F8FF 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+section {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(95, 111, 255, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+h2 {
+    color: #1A1E3A;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+p {
+    color: #1A1E3A;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+p.error {
+    color: #DC3545;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.fullname-input label,
+.email-input label,
+.password-input label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1A1E3A;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.fullname-input input,
+.email-input input,
+.password-input input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #E6E9FF;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.fullname-input input:focus,
+.email-input input:focus,
+.password-input input:focus {
+    border-color: #5f6FFF;
+    outline: none;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5f6FFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #7B8CFF;
+    transform: scale(1.05);
+}
+
+.login-link {
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #5f6FFF;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #7B8CFF;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+    .fullname-input input,
+    .email-input input,
+    .password-input input {
+        font-size: 14px;
+    }
+    .signup-button {
+        font-size: 14px;
+    }
+}

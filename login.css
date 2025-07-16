@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background: linear-gradient(180deg, #E6E9FF 0%, #A8B1FF 50%, #F7F8FF 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1A1E3A;
+    font-size: 24px;
+    font-weight: 700;
+}
+form {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(95, 111, 255, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+form:hover {
+    transform: translateY(-2px);
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1A1E3A;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #E6E9FF;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+input:focus {
+    border-color: #5f6FFF;
+    outline: none;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5f6FFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10px;
+}
+button:hover {
+    background-color: #7B8CFF;
+    transform: scale(1.05);
+}
+a {
+    color: #5f6FFF;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #FF6B6B;
+}
+p {
+    color: #1A1E3A;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+.modal-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+}
+.modal-content h3 {
+    color: #DC3545;
+    margin-bottom: 10px;
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1A1E3A;
+}
+.close:hover {
+    color: #FF6B6B;
+}
