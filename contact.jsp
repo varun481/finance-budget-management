@@ -27,11 +27,12 @@
                 </p>
                 <p class="contact-text">
                     Email: support@financemanagementsystem.com<br>
-                    Phone: +1 (800) 123-4567<br>
-                    Address: 123 Financial Avenue, Money City, FC 12345
+                    Phone: +91 7981953997<br>
+                    Address: GIET COLLEGE
                 </p>
             </div>
         </div>
     </div>
 </body>
+
 </html>
